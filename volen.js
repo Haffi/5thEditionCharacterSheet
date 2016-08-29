@@ -44,7 +44,7 @@ var charJson =
         "animal handling",
         "athletics",
         "intimidation",
-        "perception",
+        "perception"
     ],
     "attacks": {
         "longsword": {
