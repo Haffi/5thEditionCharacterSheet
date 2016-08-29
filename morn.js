@@ -124,7 +124,7 @@ var charJson =
         "Hide in Plain Sight: Take 1 minute to camouflage against natural surface for +10 Dexterity (Stealth) (p.92)",
         "Multiattack - Volley: Ranged attack against all targets in 10 foot radius area. (p.93)",
         "Bahamut's benefit - Lucky: May re-roll d20 and choose which to use three times per long rest. (p.16x)",
-        "Vanish - Bonus action to Hide, can't be tracked by nonmagical means. (p.92)",
+        "Vanish - Bonus action to Hide, can't be tracked by nonmagical means. (p.92)"
     ],
     "spellcasting": {
         "spellcastingAbility": "wis",
