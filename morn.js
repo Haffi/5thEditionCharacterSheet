@@ -1,6 +1,6 @@
 var charJson =
 {
-    "name": "Morn", // this character is retired after completing Hoard of the Dragon Queen
+    "name": "Morn", // this character is retired after completing Hoard of the Dragon Queen and Rise of Tiamat
     "classes": {
         "Ranger": {
             "level": 14,
