@@ -79,10 +79,9 @@ var charJson =
             "10 days rations",
             "50\' hemp rope",
             "travelers clothes",
-            "Seargent's insignia", // 
+            "Seargent\'s insignia", // 
             "bone dice"
-        ]
-    },
+        ],
     "personality": {
         "traits": "I keep my back to the wall, an eye out for potential threat and my sword at hand.",
         "ideals": "Ideals aren't worth killing over, or going to war for.",
