@@ -77,8 +77,8 @@ var charJson =
             "10 torches",
             "10 days rations",
             "50\' hemp rope",
-            "travelers clothes",
-            "Seargent\'s insignia", // 
+            "traveler\'s clothes",
+            "seargent\'s insignia", // left the Red Shields in good standing
             "bone dice"
         ]
     },
