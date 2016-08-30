@@ -21,18 +21,18 @@ var charJson =
     "appearance": {
         "age": 17,
         "height": "6\'5\"",
-        "weight": "205 lbs",
+        "weight": "205 lbs.",
         "eyes": "black",
         "skin": "pale grey",
         "hair": "black"
     },
     "abilityscores": {
         "str": 17,
-        "dex": 15,
+        "dex": 13,
         "con": 16,
-        "int": 8,
+        "int": 10,
         "wis": 11,
-        "cha": 8
+        "cha": 10
     },
     "savingthrow_proficiencies": [
         "str",
@@ -81,7 +81,8 @@ var charJson =
             "travelers clothes",
             "Seargent\'s insignia", // 
             "bone dice"
-        ],
+        ]
+    },
     "personality": {
         "traits": "I keep my back to the wall, an eye out for potential threat and my sword at hand.",
         "ideals": "Ideals aren't worth killing over, or going to war for.",
@@ -97,7 +98,6 @@ var charJson =
         "Shield Master: Shove as bonus action, shield AC bonus to dex saves, evasion",
         "Mercenary Life: have knowledge of and contacts within mercenary companies (scag p.152)"
     ],
-    },
     "proficiencies": [ 
         "Dice games",
         "Vehicles (land)",
