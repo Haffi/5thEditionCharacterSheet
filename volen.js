@@ -31,8 +31,8 @@ var charJson =
         "dex": 13,
         "con": 16,
         "int": 10,
-        "wis": 11,
-        "cha": 10
+        "wis": 12,
+        "cha": 9
     },
     "savingthrow_proficiencies": [
         "str",
@@ -93,7 +93,7 @@ var charJson =
         "Menacing: Proficient in Intimidation (p.41)",
         "Relentless Endurance: Once per long rest, drop to 1 instead of 0 hit ponts (p.41)",
         "Savage Attacks: Roll additional damage die on critical hits(p.41)",
-        "Fighting Style: Duelist, +2 dmg with one handed weapons (p.72)",
+        "Fighting Style: Duelist, +2 dmg while using a single one handed weapon (p.72)",
         "Second Wind: Once per long rest, regain hit points equal to d10 + Fighter level (p.72)",
         "Shield Master: Shove as bonus action, shield AC bonus to dex saves, evasion",
         "Mercenary Life: have knowledge of and contacts within mercenary companies (scag p.152)"
