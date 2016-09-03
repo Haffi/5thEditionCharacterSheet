@@ -1,8 +1,8 @@
 var charJson =
 {
-    "name": "Volen", // born and raised on a cattle ranch to the north of Longsaddle
+    "name": "Volen", // born and raised on the outskirts of a cattle ranch to the north of Longsaddle
     "classes": {
-        "Fighter": { // trained martial skills from a very young age
+        "Fighter": {
             "level": 1,
             "hitdice": "d10"
         }
@@ -79,7 +79,8 @@ var charJson =
             "50\' hemp rope",
             "traveler\'s clothes",
             "seargent\'s insignia", // left the Red Shields in good standing
-            "bone dice"
+            "bone dice",
+            "a cameo of a hideous person" // trinket 61, connected to father in some way
         ]
     },
     "personality": {
