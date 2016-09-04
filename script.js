@@ -50,7 +50,8 @@ function mapStats(characterJson, abilityToModifierStore, proficiencyModifier) {
     $.each(mainStats, function (i, ability) {
         var abilityScoreValue = characterJson.abilityscores[ability];
         // Set text and add fancy hover interaction
-        $("#" + ability).text(abilityScoreValue).hover(
+        var abilityTarget = $("#" + ability);
+        abilityTarget.text(abilityScoreValue).hover(
             function () {
                 $("." + ability).css("color", "red")
             },
@@ -66,7 +67,7 @@ function mapStats(characterJson, abilityToModifierStore, proficiencyModifier) {
             abilityToModifierStore[ability] = modifier;
         }
 
-        $("#" + ability + " ~ .mainStatModifier").text(formatModifier(modifier));
+        abilityTarget.parent().find(".mainStatModifier").first().text(formatModifier(modifier));
 
         // Deal with the saving throws and proficiencies
         if ($.inArray(ability, characterJson.savingthrow_proficiencies) > -1) {
@@ -82,15 +83,16 @@ function computeProficiencyModifier(totalLevels) {
 }
 
 function mapSkills(characterJson, abilityToModifierStore, proficiencyModifier) {
+    var targetContainer = $("#skills").find("div").first();
     $.each(skillsToAbility, function (skill, ability) {
         var modifier = abilityToModifierStore[ability];
-        // This is ugly but it works.
+        var proficiencyTag = '';
         if ($.inArray(skill.toLowerCase(), characterJson.skill_proficiences) > -1) {
-            $("#skills").find("ul").append("<li class='" + ability + " proficient'><span class='checkModifier'>" + formatModifier(modifier + proficiencyModifier) + "</span>" + skill + "<i> (" + ability + ")</i></li>");
+            proficiencyTag = ' proficient';
+            modifier += proficiencyModifier;
         }
-        else {
-            $("#skills").find("ul").append("<li class='" + ability + "'><span class='checkModifier'>" + formatModifier(modifier) + "</span>" + skill + "<i> (" + ability + ")</i></li>");
-        }
+        targetContainer.append('<div class="center-block col-xs-6 col-sm-3 col-md-6 ' + ability + proficiencyTag + '">' +
+            '<span class="checkModifier">' + formatModifier(modifier) + "</span> " + skill + '<i class="hidden-sm hidden-xs"> (' + ability + ')</i></div>');
     });
 }
 
@@ -109,12 +111,37 @@ function mapAttacks(characterJson, abilityToModifierStore, proficiencyModifier) 
     });
 }
 
+function renderListItem(target, item) {
+    if (item.indexOf(":") > -1) {
+        var arr = item.split(":");
+        target.append('<span class="fieldHeader">' + arr[0] +
+            '</span><br/><span class="fieldFooter">' + arr[1] + '</span><br/>');
+    }
+    else {
+        target.append(item + "<br/>");
+    }
+}
+
 function mapEquipment(equipment) {
     $.each(equipment.coins, function (coinType, amount) {
         $("#" + coinType).text(amount);
     });
-    $.each(equipment.other, function (i, item) {
-        $("#equipmentList").append('<li>' + item + '</li>');
+    var target = $("#equipmentList");
+    var sortedEquipment = equipment.other.sort();
+    var attuned = $.grep(sortedEquipment, function (item) {
+        return item.toLowerCase().indexOf("attuned") > -1;
+    });
+
+    $.each(attuned, function (i, item) {
+        renderListItem(target, item);
+    });
+
+    sortedEquipment = $.grep(sortedEquipment, function (item) {
+        return attuned.indexOf(item) < 0;
+    });
+
+    $.each(sortedEquipment, function (i, item) {
+        renderListItem(target, item);
     });
 }
 
@@ -126,41 +153,48 @@ function mapPersonality(personality) {
 }
 
 function mapFeatures(features) {
-    $.each(features.reverse(), function (i, feature) {
-        $("#featuresandtraits").prepend(feature + "<br/>");
+    var target = $("#featuresandtraits");
+    $.each(features.sort(), function (i, feature) {
+        renderListItem(target, feature);
     });
 }
 
 function mapProficiencesAndLanguages(characterJson) {
-    $.each(characterJson.languages.reverse(), function (i, language) {
+    $.each(characterJson.languages.sort().reverse(), function (i, language) {
         $("#otherProficienciesAndLanguages").prepend(language + "<br/>");
     });
-    $.each(characterJson.proficiencies.reverse(), function (i, proficiency) {
+    $.each(characterJson.proficiencies.sort().reverse(), function (i, proficiency) {
         $("#otherProficienciesAndLanguages").prepend(proficiency + "<br/>");
     });
 }
 
 function mapAppearance(characterJson) {
     $.each(characterJson.appearance, function (attrKey, attrValue) {
-        $("#" + attrKey).prepend(attrValue)
+        $("#" + attrKey).append(attrValue)
+    });
+}
+
+function mapContacts(characterJson) {
+    $.each(characterJson.contacts, function (i, contact) {
+        $("#contactlist").append(contact + "<br/>");
     });
 }
 
 function mapSpells(characterJson, abilityToModifierStore, proficiencyModifier) {
-    if("spellcastingAbility" in characterJson.spellcasting){
+    if ("spellcastingAbility" in characterJson.spellcasting) {
         var spellCastingAttackModifier = abilityToModifierStore[characterJson.spellcasting.spellcastingAbility] + proficiencyModifier;
-        $("#spellAttackBonus").prepend("+"+spellCastingAttackModifier);
-        $("#spellSaveDC").prepend("+"+(spellCastingAttackModifier+8));
-        $("#spellcastingAbility").prepend(characterJson.spellcasting.spellcastingAbility);
+        $("#spellAttackBonus").append("+" + spellCastingAttackModifier);
+        $("#spellSaveDC").append("+" + (spellCastingAttackModifier + 8));
+        $("#spellcastingAbility").append(characterJson.spellcasting.spellcastingAbility);
     }
-    if("spells" in characterJson.spellcasting){
+    if ("spells" in characterJson.spellcasting) {
         $.each(characterJson.spellcasting.spells, function (attrKey, attrValue) {
-            $.each(attrValue, function(spellKey, spellName){
-                $("#" + attrKey).append("<div>"+spellName+"</div>")
-            });           
+            $.each(attrValue, function (spellKey, spellName) {
+                $("#" + attrKey).append("<div>" + spellName + "</div>")
+            });
         });
         // Remove empty spell slots
-        for (var n = 0; n < 10; ++ n) {
+        for (var n = 110; n < 10; ++n) {
             var spell = "spells" + n;
             if (!(spell in characterJson.spellcasting.spells)) {
                 $("#" + spell).remove();
@@ -196,7 +230,15 @@ function loadChar(characterJson) {
     $("#player_name").html(characterJson.mainattributes.playername || "&nbsp");
     $("#character_xp").html(characterJson.mainattributes.xp || "&nbsp");
 
-    $("#inspirationPoints").text(characterJson.inspirationpoints);
+    // Map inspiration
+    if ((characterJson.hasinspirationpoint || $.isNumeric(characterJson.inspirationpoints) && characterJson.inspirationpoints > 0)) {
+        $('#inspiration').prop("checked", true)
+    }
+
+    // Map exhaustion
+    if (characterJson.exhaustionlevel > 0) {
+        $("#exhaustion").find("input[name=exhaustionLevel][value=" + characterJson.exhaustionlevel + "]").prop('checked', true);
+    }
 
     // Plug in ability scores, modifiers and saving throws
     var abilityToModifierStore = {};
@@ -225,17 +267,21 @@ function loadChar(characterJson) {
     mapFeatures(characterJson.features);
     mapProficiencesAndLanguages(characterJson);
     mapAppearance(characterJson);
-    if("spellcasting" in characterJson){
+    if ("contacts" in characterJson) {
+        mapContacts(characterJson);
+    }
+    if ("spellcasting" in characterJson) {
         mapSpells(characterJson, abilityToModifierStore, proficiencyModifier);
     }
     else {
-        $("#spells").remove();
-        $("#spellcastingAbilitySaveAttack").remove();
+        $("#spellsContainer").remove();
+        $("#spellAbilitiesContainer").remove();
     }
 }
 
 // Inject the JSONp "script" from the location defined in the URL.
 var charURL = decodeURIComponent(getVars()["charURL"]);
+if (charURL === 'undefined') charURL = 'fireaxe.js';
 $.ajax({
     url: charURL,
     dataType: 'script',
@@ -244,6 +290,6 @@ $.ajax({
         loadChar(charJson);
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
-        alert("Failed loading data from charURL - " + textStatus + " - " + errorThrown);
+        alert("Failed loading data from charURL " + charURL + "  - " + textStatus + " - " + errorThrown);
     }
 });
