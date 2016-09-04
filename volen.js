@@ -1,9 +1,9 @@
 var charJson =
 {
-    "name": "Volen", // born and raised on the outskirts of a cattle ranch to the north of Longsaddle
-    "classes": {
-        "Fighter": {
-            "level": 1,
+    "name": "Volen", // born and raised on the outskirts of a cattle ranch to the NNW of Longsaddle (scag p.48)
+    "classes": { // father is unknown, mother (Aret) is a lone Orc shaman living in a small cottage
+        "Fighter": { // Aret has come to some understanding with the Kromlor family who own the ranch
+            "level": 1, // Volen suspects her father is not a local, is curious to find out more about the outside world
             "hitdice": "d10"
         }
     },
@@ -12,7 +12,7 @@ var charJson =
     "ac": 18, // 16 (chain mail) + 2 (shield)
     "speed": 30,
     "mainattributes": {
-        "background": "Mercenary Veteran", // served for almost four years in Red Shields
+        "background": "Mercenary Veteran", // served four years in Red Shields mercenary band
         "race": "Half-Orc",
         "alignment": "Lawful Neutral",
         "playername": "Haffi",
@@ -20,19 +20,19 @@ var charJson =
     },
     "appearance": {
         "age": 19, // left home at 14 years of age
-        "height": "6\'5\"",
-        "weight": "205 lbs.",
-        "eyes": "black",
-        "skin": "pale grey",
-        "hair": "black"
+        "height": "6\'5\"", // 195cm
+        "weight": "227 lbs.", // 103kg
+        "eyes": "black", // constantly on the lookout for a potential threat, always weighing her options in case a fight breaks out
+        "skin": "pale grey", // skin "like a drowned corpse" like one drunk mercenary put it
+        "hair": "black" // close cut, usually covered by a helmet
     },
     "abilityscores": {
         "str": 17,
         "dex": 13,
         "con": 16,
-        "int": 10,
+        "int": 9,
         "wis": 12,
-        "cha": 9
+        "cha": 10
     },
     "savingthrow_proficiencies": [
         "str",
@@ -77,25 +77,30 @@ var charJson =
             "10 torches",
             "10 days rations",
             "50\' hemp rope",
-            "traveler\'s clothes",
+            "traveler\'s clothes", // Red Shields uniform
             "seargent\'s insignia", // left the Red Shields in good standing
             "bone dice",
-            "a cameo of a hideous person" // trinket 61, connected to father in some way
+            "chain mail",
+            "longsword",
+            "shield", // painted red
+            "handaxe (pair)",
+            "helmet",
+            "cameo of a hideous person" // trinket 61, connected to father in some way
         ]
     },
     "personality": {
         "traits": "I keep my back to the wall, an eye out for potential threat and my sword at hand.",
         "ideals": "Ideals aren't worth killing over, or going to war for.",
-        "bonds": "I work hard to suppress the mark of Gruumsh.",
+        "bonds": "I work hard to suppress the Mark of Gruumsh.",
         "flaws": "I have little respect for anyone that is not a proven warrior."
     },
-    "features": [
+    "features": [ // Feat plan: Resilient (dex), Medium Armor Mastery, get Half plate armor then Dex to 16
         "Menacing: Proficient in Intimidation (p.41)",
         "Relentless Endurance: Once per long rest, drop to 1 instead of 0 hit ponts (p.41)",
         "Savage Attacks: Roll additional damage die on critical hits (p.41)",
         "Fighting Style: Duelist, +2 dmg while using a single one handed weapon (p.72)",
         "Second Wind: Once per long rest, regain hit points equal to d10 + Fighter level (p.72)",
-        "Shield Master: Shove as bonus action, shield AC bonus to dex saves, evasion",
+        "Shield Master: Shove as bonus action, shield AC bonus to dex saves, evasion (p.169)",
         "Mercenary Life: I have knowledge of and contacts within mercenary companies (scag p.152)"
     ],
     "proficiencies": [ 
