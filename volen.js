@@ -3,12 +3,12 @@ var charJson =
     "name": "Volen", // born and raised on the outskirts of a cattle ranch to the NNW of Longsaddle (scag p.48)
     "classes": { // father is unknown, mother (Aret) is a lone Orc shaman living in a small cottage
         "Fighter": { // Aret has come to some understanding with the Kromlor family who own the ranch
-            "level": 1, // Volen suspects her father is not a local, is curious to find out more about the outside world
+            "level": 2, // Volen suspects her father is not a local, is curious to find out more about the outside world
             "hitdice": "d10"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 13, // 13
+    "hitpoints": 22, // 13 + 9
     "ac": 18, // 16 (chain mail) + 2 (shield)
     "speed": 30,
     "mainattributes": {
@@ -16,7 +16,7 @@ var charJson =
         "race": "Half-Orc",
         "alignment": "Lawful Neutral",
         "playername": "Haffi",
-        "xp": 0 // page 15 in PHB
+        "xp": 300 // page 15 in PHB
     },
     "appearance": {
         "age": 19, // left home at 14 years of age
@@ -59,6 +59,13 @@ var charJson =
             "die": "1d6",
             "proficient": true,
             "type": "slashing"
+        },
+        "warhammer": {
+            "ability": "str",
+            "extraDmgMod": +2, // Duelist fighting style
+            "die": "1d8",
+            "proficient": true,
+            "type": "bludgeoning"
         }
     },
     "equipment": {
@@ -66,7 +73,7 @@ var charJson =
             "copper": 0,
             "silver": 0,
             "electrum": 0,
-            "gold": 10,
+            "gold": 26,
             "platinum": 0
         },
         "other": [
@@ -84,6 +91,7 @@ var charJson =
             "longsword",
             "shield", // painted red
             "handaxe (pair)",
+            "warhammer",
             "helmet",
             "cameo of a hideous person" // trinket 61, connected to father in some way
         ]
@@ -101,7 +109,8 @@ var charJson =
         "Fighting Style: Duelist, +2 dmg while using a single one handed weapon (p.72)",
         "Second Wind: Once per long rest, regain hit points equal to d10 + Fighter level (p.72)",
         "Shield Master: Shove as bonus action, shield AC bonus to dex saves, evasion (p.169)",
-        "Mercenary Life: I have knowledge of and contacts within mercenary companies (scag p.152)"
+        "Mercenary Life: I have knowledge of and contacts within mercenary companies (scag p.152)",
+        "Action Surge: Additional action once per short rest (p.72)"
     ],
     "proficiencies": [ 
         "Dice games",
