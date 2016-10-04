@@ -69,7 +69,7 @@ var charJson =
             "silver": 0,
             "electrum": 0,
             "gold": 10,
-            "platinium": 0
+            "platinum": 0
         },
         "armor": [
             "Armor",
@@ -122,5 +122,9 @@ var charJson =
     "languages": [
         "Common",
         "Uncommon"
+    ],
+    "contacts": [
+        "some gal",
+        "some guy"
     ]
 };
