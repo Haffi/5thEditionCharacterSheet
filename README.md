@@ -11,8 +11,8 @@ It's all just happening in the front-end so no webserver is required.
 The sheet supports multiple classes and automatically computes ability modifiers, skill modifiers and character proficiency level.
 Just look at the example character files to get started with your own.
 
-To test latest version for FireAxe: (might require several reloads)
-https://rawgit.com/kjwise/5thEditionCharacterSheet/master/charsheet.html?charURL=fireaxe.js
+To test latest version for Volen: (might require several reloads)
+https://rawgit.com/haffi/5thEditionCharacterSheet/master/charsheet.html?charURL=volen.js
 
-To test latest version for Morn: (might require several reloads)
-https://rawgit.com/kjwise/5thEditionCharacterSheet/master/charsheet.html?charURL=morn.js
+To test latest version for Baur: (might require several reloads)
+https://rawgit.com/haffi/5thEditionCharacterSheet/master/charsheet.html?charURL=baur.js
