@@ -38,11 +38,11 @@ var charJson =
         "int", "wis"
     ],
     "skill_proficiences": [
-        "Intimidation", // from Half-Orc
-        "Medicine", // from background
-        "Survival", // from background
-        "Arcana", // from class
-        "Investigation" // from class
+        "intimidation", // from Half-Orc
+        "medicine", // from background
+        "survival", // from background
+        "arcana", // from class
+        "investigation" // from class
     ],
     "attacks": {
         "Dagger": {
