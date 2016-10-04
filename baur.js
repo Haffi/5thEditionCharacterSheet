@@ -1,6 +1,6 @@
 var charJson =
 {
-    "name": "Baur the Black",
+    "name": "Black Baur",
     "classes": {
         "Wizard": {
             "level": 1,
@@ -38,11 +38,11 @@ var charJson =
         "int", "wis"
     ],
     "skill_proficiences": [
-        "Intimidation",
-        "Medicine",
-        "Survival",
-        "Arcana",
-        "Investigation"
+        "Intimidation", // from Half-Orc
+        "Medicine", // from background
+        "Survival", // from background
+        "Arcana", // from class
+        "Investigation" // from class
     ],
     "attacks": {
         "Dagger": {
@@ -79,14 +79,14 @@ var charJson =
     "personality": {
         "traits": "I am utterly serene, even in the face of disaster.",
         "ideals": "Meddling in the affairs of others only causes trouble.",
-        "bonds": "My life\'s work is a series of tomes on Necromancy.",
+        "bonds": "My life\'s work is writing a book on Vitalism.",
         "flaws": "I\'d risk too much to uncover a lost bit of knowledge."
     },
     "features": [
-        "Darkvision (60\')",
-        "Relentless Endurance",
-        "Savage Attacks",
-        "Arcane Recovery"
+        "Darkvision (60\')", // from race
+        "Relentless Endurance", // from race
+        "Savage Attacks", // from race
+        "Arcane Recovery" // from class
     ],
     "spellcasting": {
         "spellcastingAbility": "int",
@@ -100,8 +100,7 @@ var charJson =
         }
     },
     "proficiencies": [
-        "Herbalism kit",
-        "Tool"
+        "Herbalism kit" // from background
     ],
     "languages": [
         "Common",
