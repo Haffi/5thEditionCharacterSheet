@@ -1,6 +1,12 @@
+/*
+Baur is Volen's older brother, he picked up basic spellcasting from their mothers (Aret) shamanism. He has been wandering the
+Sword Coast for years looking to expand his knowledge on Vitalism & Necromancy. Occasionally he will linger in an area,
+usually because there is an interesting library to plunder, and make a living by selling healing potions and other remedies
+to the locals. 
+*/
 var charJson =
 {
-    "name": "Black Baur",
+    "name": "Baur",
     "classes": {
         "Wizard": {
             "level": 1,
@@ -73,7 +79,8 @@ var charJson =
             "Traveler\'s clothes",
             "Winter blanket",
             "Scroll case stuffed with notes on Medicine and Necromancy",
-            "Herbalism kit"
+            "Herbalism kit",
+            "Component pouch"
         ]
     },
     "personality": {
@@ -86,7 +93,8 @@ var charJson =
         "Darkvision (60\')", // from race
         "Relentless Endurance", // from race
         "Savage Attacks", // from race
-        "Arcane Recovery" // from class
+        "Arcane Recovery", // from class
+        "Magic Initiate: Cleric" // Spare the Dying, Thaumaturgy, Sanctuary 
     ],
     "spellcasting": {
         "spellcastingAbility": "int",
@@ -95,8 +103,8 @@ var charJson =
             "spells1": 2
         },
         "spells": {
-            "spells0": ["Chill Touch", "Light", "Ray of Frost"],
-            "spells1": ["Ray of Sickness", "Identify"]
+            "spells0": ["Chill Touch", "Light", "Ray of Frost", "Spare the Dying", "Thaumaturgy"],
+            "spells1": ["Detect Magic", "False Life", "Find Familiar", "Identify", "Inflict Wounds", "Ray of Sickness", "Witch Bolt"]
         }
     },
     "proficiencies": [
@@ -106,5 +114,7 @@ var charJson =
         "Common",
         "Orc",
         "Elvish"
-    ]
+    ],
+    "contacts": [
+        ]
 };
