@@ -3,12 +3,12 @@ var charJson =
     "name": "Volen", // born and raised on the outskirts of a cattle ranch to the NNW of Longsaddle (scag p.48)
     "classes": { // father is unknown, mother (Aret) is a lone Orc shaman living in a small cottage
         "Fighter": { // Aret has come to some understanding with the Kromlor family who own the ranch
-            "level": 2, // Volen suspects her father is not a local, is curious to find out more about the outside world
+            "level": 3, // Volen suspects her father is not a local, is curious to find out more about the outside world
             "hitdice": "d10"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 22, // 13 + 9
+    "hitpoints": 32, // 13 + 9
     "ac": 18, // 16 (chain mail) + 2 (shield)
     "speed": 30,
     "mainattributes": {
@@ -110,7 +110,8 @@ var charJson =
         "Second Wind: Once per long rest, regain hit points equal to d10 + Fighter level (p.72)",
         "Shield Master: Shove as bonus action, shield AC bonus to dex saves, evasion (p.169)",
         "Mercenary Life: I have knowledge of and contacts within mercenary companies (scag p.152)",
-        "Action Surge: Additional action once per short rest (p.72)"
+        "Action Surge: Additional action once per short rest (p.72)",
+        "Improved Critical: Score crit on 19 or 20 (p.72)"
     ],
     "proficiencies": [ 
         "Dice games",
