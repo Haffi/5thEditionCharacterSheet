@@ -3,20 +3,20 @@ var charJson =
     "name": "Volen", // born and raised on the outskirts of a cattle ranch to the NNW of Longsaddle (scag p.48)
     "classes": { // father is unknown, mother (Aret) is a lone Orc shaman living in a small cottage
         "Fighter": { // Aret has come to some understanding with the Kromlor family who own the ranch
-            "level": 3, // Volen suspects her father is not a local, is curious to find out more about the outside world
+            "level": 4, // Volen suspects her father is not a local, is curious to find out more about the outside world
             "hitdice": "d10"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 32, // 13 + 9
-    "ac": 18, // 16 (chain mail) + 2 (shield)
+    "hitpoints": 41, // 13 + 9 + 10 + 9
+    "ac": 20, // 18 (plate) + 2 (shield)
     "speed": 30,
     "mainattributes": {
         "background": "Mercenary Veteran", // served four years in Red Shields mercenary band
         "race": "Half-Orc",
         "alignment": "Lawful Neutral",
         "playername": "Haffi",
-        "xp": 300 // page 15 in PHB
+        "xp": 2700 // page 15 in PHB
     },
     "appearance": {
         "age": 19, // left home at 14 years of age
@@ -27,16 +27,17 @@ var charJson =
         "hair": "black" // close cut, usually covered by a helmet
     },
     "abilityscores": {
-        "str": 17,
-        "dex": 13,
-        "con": 16,
+        "str": 17, // +2 Half-Orc
+        "dex": 14, // +1 Resilient feat
+        "con": 16, // +1 Half-Orc
         "int": 9,
         "wis": 12,
         "cha": 10
     },
     "savingthrow_proficiencies": [
         "str",
-        "con"
+        "con",
+        "dex" // Resilient feat
     ],
     "skill_proficiences": [
         "acrobatics",
@@ -87,7 +88,7 @@ var charJson =
             "traveler\'s clothes", // Red Shields uniform
             "seargent\'s insignia", // left the Red Shields in good standing
             "bone dice",
-            "chain mail",
+            "plate armor",
             "longsword",
             "shield", // painted red
             "handaxe (pair)",
@@ -111,7 +112,8 @@ var charJson =
         "Shield Master: Shove as bonus action, shield AC bonus to dex saves, evasion (p.169)",
         "Mercenary Life: I have knowledge of and contacts within mercenary companies (scag p.152)",
         "Action Surge: Additional action once per short rest (p.72)",
-        "Improved Critical: Score crit on 19 or 20 (p.72)"
+        "Improved Critical: Score crit on 19 or 20 (p.72)",
+        "Resilient (Dex): Gail proficiency in Dexterity saving throws (p. 168)"
     ],
     "proficiencies": [ 
         "Dice games",
