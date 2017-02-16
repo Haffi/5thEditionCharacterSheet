@@ -71,7 +71,7 @@ var charJson =
         "light crossbow": {
             "ability": "dex",
             "extraDmgMod": 0,
-            "die": "1d6",
+            "die": "1d8",
             "proficient": true,
             "type": "piercing"
         }
