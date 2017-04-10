@@ -9,12 +9,12 @@ var charJson =
     "name": "Baur",
     "classes": {
         "Wizard": {
-            "level": 1,
+            "level": 3,
             "hitdice": "d6"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 9,
+    "hitpoints": 24, // 9 + 8 + 7
     "ac": "12",
     "speed": 30,
     "mainattributes": {
@@ -80,7 +80,8 @@ var charJson =
             "Winter blanket",
             "Scroll case stuffed with notes on Medicine and Necromancy",
             "Herbalism kit",
-            "Component pouch"
+            "Component pouch",
+            "Profane staff" // Visions of the Vault p. 8
         ]
     },
     "personality": {
@@ -93,18 +94,23 @@ var charJson =
         "Darkvision (60\')", // from race
         "Relentless Endurance", // from race
         "Savage Attacks", // from race
-        "Arcane Recovery", // from class
-        "Magic Initiate: Cleric" // Spare the Dying, Thaumaturgy, Sanctuary 
+        "Arcane Recovery: Regain spell slots on short rest (PH 115)", // from class
+        "Magic Initiate: Cleric", // Spare the Dying, Thaumaturgy, Sanctuary
+        "Familiar: Raven (celestial)",
+        "Arcane Tradition: Necromancy",
+        "Grim Harvest: Heal self when killing with spells (PH 118)
     ],
     "spellcasting": {
         "spellcastingAbility": "int",
         "spellSlots": {
             "spells0": 0,
-            "spells1": 2
+            "spells1": 4,
+            "spells2": 2
         },
         "spells": {
             "spells0": ["Chill Touch", "Light", "Ray of Frost", "Spare the Dying", "Thaumaturgy"],
-            "spells1": ["Detect Magic", "False Life", "Find Familiar", "Identify", "Inflict Wounds", "Ray of Sickness", "Witch Bolt"]
+            "spells1": ["Comprehend Languages", "Detect Magic", "False Life", "Find Familiar", "Identify", "Inflict Wounds", "Mage Armor" "Ray of Sickness", "Witch Bolt"],
+            "spells2": ["Gentle Repose", "Ray of Enfeeblement"]
         }
     },
     "proficiencies": [
