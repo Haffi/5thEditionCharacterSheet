@@ -9,12 +9,12 @@ var charJson =
     "name": "Baur",
     "classes": {
         "Wizard": {
-            "level": 4,
+            "level": 5,
             "hitdice": "d6"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 31, // 9 + 8 + 7 + 7
+    "hitpoints": 40, // 9 + 8 + 7 + 7 + 9
     "ac": "12",
     "speed": 30,
     "mainattributes": {
@@ -105,20 +105,22 @@ var charJson =
         "Magic Initiate: Cleric", // Spare the Dying, Thaumaturgy, Sanctuary
         "Familiar: Raven (celestial)",
         "Arcane Tradition: Necromancy",
-        "Grim Harvest: Heal self when killing with spells (PH 118),
-        "Keen Mind: Always aware which way is north and what time it is, good memory. (PH 167)
+        "Grim Harvest: Heal self when killing with spells (PH 118)",
+        "Keen Mind: Always aware which way is north and what time it is, good memory. (PH 167)"
     ],
     "spellcasting": {
         "spellcastingAbility": "int",
         "spellSlots": {
             "spells0": 0,
             "spells1": 4,
-            "spells2": 3
+            "spells2": 3,
+            "spells3": 2
         },
         "spells": {
             "spells0": ["Chill Touch", "Light", "Ray of Frost", "Spare the Dying", "Thaumaturgy"],
             "spells1": ["Comprehend Languages", "Detect Magic", "False Life", "Find Familiar", "Identify", "Inflict Wounds", "Mage Armor" "Ray of Sickness", "Witch Bolt"],
-            "spells2": ["Blindness/Deafness", "Gentle Repose", "Melf's Acid Arrow", "Ray of Enfeeblement"]
+            "spells2": ["Blindness/Deafness", "Gentle Repose", "Melf's Acid Arrow", "Ray of Enfeeblement"],
+            "spells3": ["Animate Dead", "Bestow Curse"]
         }
     },
     "proficiencies": [
