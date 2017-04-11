@@ -9,12 +9,12 @@ var charJson =
     "name": "Baur",
     "classes": {
         "Wizard": {
-            "level": 3,
+            "level": 4,
             "hitdice": "d6"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 24, // 9 + 8 + 7
+    "hitpoints": 31, // 9 + 8 + 7 + 7
     "ac": "12",
     "speed": 30,
     "mainattributes": {
@@ -33,10 +33,10 @@ var charJson =
         "hair": "Black"
     },
     "abilityscores": {
-        "str": 10,
+        "str": 10, // +2 from Half-Orc
         "dex": 14,
-        "con": 16,
-        "int": 15,
+        "con": 16, // +1 from Half-Orc
+        "int": 16, // +1 from Keen Mind
         "wis": 13,
         "cha": 8
     },
@@ -51,6 +51,12 @@ var charJson =
         "investigation" // from class
     ],
     "attacks": {
+        "Quarterstaff": {
+            "ability": "str",
+            "die": "1d6/1d8",
+            "proficient": true,
+            "type": "b"
+        }
         "Dagger": {
             "ability": "dex",
             "die": "1d4",
@@ -81,7 +87,8 @@ var charJson =
             "Scroll case stuffed with notes on Medicine and Necromancy",
             "Herbalism kit",
             "Component pouch",
-            "Profane staff" // Visions of the Vault p. 8
+            "Profane Staff", // Visions of the Vault p. 8
+            "Healer's kit"
         ]
     },
     "personality": {
@@ -90,7 +97,7 @@ var charJson =
         "bonds": "My life\'s work is writing a book on Vitalism.",
         "flaws": "I\'d risk too much to uncover a lost bit of knowledge."
     },
-    "features": [
+    "features": [ // good feats: Healer, Keen Mind, War Caster
         "Darkvision (60\')", // from race
         "Relentless Endurance", // from race
         "Savage Attacks", // from race
@@ -98,19 +105,20 @@ var charJson =
         "Magic Initiate: Cleric", // Spare the Dying, Thaumaturgy, Sanctuary
         "Familiar: Raven (celestial)",
         "Arcane Tradition: Necromancy",
-        "Grim Harvest: Heal self when killing with spells (PH 118)
+        "Grim Harvest: Heal self when killing with spells (PH 118),
+        "Keen Mind: Always aware which way is north and what time it is, good memory. (PH 167)
     ],
     "spellcasting": {
         "spellcastingAbility": "int",
         "spellSlots": {
             "spells0": 0,
             "spells1": 4,
-            "spells2": 2
+            "spells2": 3
         },
         "spells": {
             "spells0": ["Chill Touch", "Light", "Ray of Frost", "Spare the Dying", "Thaumaturgy"],
             "spells1": ["Comprehend Languages", "Detect Magic", "False Life", "Find Familiar", "Identify", "Inflict Wounds", "Mage Armor" "Ray of Sickness", "Witch Bolt"],
-            "spells2": ["Gentle Repose", "Ray of Enfeeblement"]
+            "spells2": ["Blindness/Deafness", "Gentle Repose", "Melf's Acid Arrow", "Ray of Enfeeblement"]
         }
     },
     "proficiencies": [
