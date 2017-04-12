@@ -9,12 +9,12 @@ var charJson =
     "name": "Baur",
     "classes": {
         "Wizard": {
-            "level": 5,
+            "level": 6,
             "hitdice": "d6"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 40, // 9 + 8 + 7 + 7 + 9
+    "hitpoints": 48, // 9 + 8 + 7 + 7 + 9 + 8
     "ac": "12",
     "speed": 30,
     "mainattributes": {
@@ -56,7 +56,7 @@ var charJson =
             "die": "1d6/1d8",
             "proficient": true,
             "type": "b"
-        }
+        },
         "Dagger": {
             "ability": "dex",
             "die": "1d4",
@@ -106,7 +106,8 @@ var charJson =
         "Familiar: Raven (celestial)",
         "Arcane Tradition: Necromancy",
         "Grim Harvest: Heal self when killing with spells (PH 118)",
-        "Keen Mind: Always aware which way is north and what time it is, good memory. (PH 167)"
+        "Keen Mind: Always aware which way is north and what time it is, good memory. (PH 167)",
+        "Undead Thralls: Extra hit points and damage for undead thralls. (PH 119)"
     ],
     "spellcasting": {
         "spellcastingAbility": "int",
@@ -114,13 +115,13 @@ var charJson =
             "spells0": 0,
             "spells1": 4,
             "spells2": 3,
-            "spells3": 2
+            "spells3": 3
         },
         "spells": {
             "spells0": ["Chill Touch", "Light", "Ray of Frost", "Spare the Dying", "Thaumaturgy"],
             "spells1": ["Comprehend Languages", "Detect Magic", "False Life", "Find Familiar", "Identify", "Inflict Wounds", "Mage Armor" "Ray of Sickness", "Witch Bolt"],
             "spells2": ["Blindness/Deafness", "Gentle Repose", "Melf's Acid Arrow", "Ray of Enfeeblement"],
-            "spells3": ["Animate Dead", "Bestow Curse"]
+            "spells3": ["Animate Dead", "Bestow Curse", "Leomund's Tiny Hut", "Stinking Cloud"]
         }
     },
     "proficiencies": [
