@@ -3,12 +3,12 @@ var charJson =
     "name": "Volen", // born and raised on the outskirts of a cattle ranch to the NNW of Longsaddle (scag p.48)
     "classes": { // father is unknown, mother (Aret) is a lone Orc shaman living in a small cottage
         "Fighter": { // Aret has come to some understanding with the Kromlor family who own the ranch
-            "level": 5, // Volen suspects her father is not a local, is curious to find out more about the outside world
+            "level": 6, // Volen suspects her father is not a local, is curious to find out more about the outside world
             "hitdice": "d10"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 50, // 13 + 9 + 10 + 9 + 9
+    "hitpoints": 50, // 13 + 9 + 10 + 9 + 9 + 11
     "ac": 20, // 18 (plate) + 2 (shield)
     "speed": 30,
     "mainattributes": {
@@ -27,7 +27,7 @@ var charJson =
         "hair": "black" // close cut, usually covered by a helmet
     },
     "abilityscores": {
-        "str": 17, // +2 Half-Orc
+        "str": 18, // +2 Half-Orc, + 1 Heavy Armor Master
         "dex": 14, // +1 Resilient feat
         "con": 16, // +1 Half-Orc
         "int": 9,
@@ -101,7 +101,8 @@ var charJson =
             "handaxe (pair)",
             "warhammer",
             "helmet",
-            "cameo of a hideous person" // trinket 61, connected to father in some way
+            "cameo of a hideous person", // trinket 61, connected to father in some way
+            "Potion of 'Bottled breath'"
         ]
     },
     "personality": {
@@ -121,7 +122,8 @@ var charJson =
         "Action Surge: Additional action once per short rest (p.72)",
         "Improved Critical: Score crit on 19 or 20 (p.72)",
         "Resilient (Dex): Gail proficiency in Dexterity saving throws (p. 168)",
-        "Extra attack: Attack twice with Attack action (p. 72)"
+        "Extra attack: Attack twice with Attack action (p. 72)",
+        "Heavy Armor Master: Ignore 3 mundane damage when wearing heavy armor. (p. 167)"
     ],
     "proficiencies": [ 
         "Dice games",
