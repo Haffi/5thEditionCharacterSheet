@@ -8,7 +8,7 @@ var charJson =
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 50, // 13 + 9 + 10 + 9 + 9 + 11
+    "hitpoints": 61, // 13 + 9 + 10 + 9 + 9 + 11
     "ac": 20, // 18 (plate) + 2 (shield)
     "speed": 30,
     "mainattributes": {
@@ -50,7 +50,7 @@ var charJson =
         "longsword": {
             "ability": "str",
             "extraDmgMod": +2, // Duelist fighting style
-            "die": "1d8",
+            "die": "1d8/1d10",
             "proficient": true,
             "type": "slashing"
         },
@@ -123,7 +123,7 @@ var charJson =
         "Improved Critical: Score crit on 19 or 20 (p.72)",
         "Resilient (Dex): Gail proficiency in Dexterity saving throws (p. 168)",
         "Extra attack: Attack twice with Attack action (p. 72)",
-        "Heavy Armor Master: Ignore 3 mundane damage when wearing heavy armor. (p. 167)"
+        "Heavy Armor Master: Ignore 3 mundane damage when wearing heavy armor (p. 167)"
     ],
     "proficiencies": [ 
         "Dice games",
