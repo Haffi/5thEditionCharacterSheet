@@ -121,7 +121,7 @@ var charJson =
         "Mercenary Life: I have knowledge of and contacts within mercenary companies (scag p.152)",
         "Action Surge: Additional action once per short rest (p.72)",
         "Improved Critical: Score crit on 19 or 20 (p.72)",
-        "Resilient (Dex): Gail proficiency in Dexterity saving throws (p. 168)",
+        "Resilient (Dex): Gain proficiency in Dexterity saving throws (p. 168)",
         "Extra attack: Attack twice with Attack action (p. 72)",
         "Heavy Armor Master: Ignore 3 mundane damage when wearing heavy armor (p. 167)"
     ],
