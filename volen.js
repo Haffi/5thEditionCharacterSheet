@@ -8,7 +8,7 @@ var charJson =
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 61, // 13 + 9 + 10 + 9 + 9 + 11 + 9
+    "hitpoints": 70, // 13 + 9 + 10 + 9 + 9 + 11 + 9
     "ac": 20, // 18 (plate) + 2 (shield)
     "speed": 30,
     "mainattributes": {
@@ -64,7 +64,7 @@ var charJson =
         "Storm boomerang": {
             "ability": "str",
             "extraDmgMod": 0,
-            "die": "1d4",
+            "die": "4d4",
             "proficient": true,
             "type": "bludgeoning"
         }
@@ -90,7 +90,7 @@ var charJson =
             "bone dice",
             "plate armor",
             "longsword",
-            "shield", // painted red
+            "shield",
             "warhammer",
             "helmet",
             "cameo of a hideous person", // trinket 61, connected to father in some way
