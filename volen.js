@@ -3,12 +3,12 @@ var charJson =
     "name": "Volen", // born and raised on the outskirts of a cattle ranch to the NNW of Longsaddle (scag p.48)
     "classes": { // father is unknown, mother (Aret) is a lone Orc shaman living in a small cottage
         "Fighter": { // Aret has come to some understanding with the Kromlor family who own the ranch
-            "level": 6, // Volen suspects her father is not a local, is curious to find out more about the outside world
+            "level": 7, // Volen suspects her father is not a local, is curious to find out more about the outside world
             "hitdice": "d10"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 61, // 13 + 9 + 10 + 9 + 9 + 11
+    "hitpoints": 61, // 13 + 9 + 10 + 9 + 9 + 11 + 9
     "ac": 20, // 18 (plate) + 2 (shield)
     "speed": 30,
     "mainattributes": {
@@ -16,7 +16,7 @@ var charJson =
         "race": "Half-Orc",
         "alignment": "Lawful Neutral",
         "playername": "Haffi",
-        "xp": 6500 // page 15 in PHB
+        "xp": 23000 // page 15 in PHB
     },
     "appearance": {
         "age": 19, // left home at 14 years of age
@@ -54,13 +54,6 @@ var charJson =
             "proficient": true,
             "type": "slashing"
         },
-        "handaxe": {
-            "ability": "str",
-            "extraDmgMod": +2, // Duelist fighting style
-            "die": "1d6",
-            "proficient": true,
-            "type": "slashing"
-        },
         "warhammer": {
             "ability": "str",
             "extraDmgMod": +2, // Duelist fighting style
@@ -68,12 +61,12 @@ var charJson =
             "proficient": true,
             "type": "bludgeoning"
         },
-        "light crossbow": {
-            "ability": "dex",
+        "Storm boomerang": {
+            "ability": "str",
             "extraDmgMod": 0,
-            "die": "1d8",
+            "die": "1d4",
             "proficient": true,
-            "type": "piercing"
+            "type": "bludgeoning"
         }
     },
     "equipment": {
@@ -81,7 +74,7 @@ var charJson =
             "copper": 0,
             "silver": 0,
             "electrum": 0,
-            "gold": 26,
+            "gold": 1326,
             "platinum": 0
         },
         "other": [
@@ -98,10 +91,10 @@ var charJson =
             "plate armor",
             "longsword",
             "shield", // painted red
-            "handaxe (pair)",
             "warhammer",
             "helmet",
             "cameo of a hideous person", // trinket 61, connected to father in some way
+            "2 x Storm boomerang - +3d4 thunder damage, DC 10 con save or be stunned",
             "Potion of 'Bottled breath'"
         ]
     },
@@ -123,7 +116,8 @@ var charJson =
         "Improved Critical: Score crit on 19 or 20 (p.72)",
         "Resilient (Dex): Gain proficiency in Dexterity saving throws (p. 168)",
         "Extra attack: Attack twice with Attack action (p. 72)",
-        "Heavy Armor Master: Ignore 3 mundane damage when wearing heavy armor (p. 167)"
+        "Heavy Armor Master: Ignore 3 mundane damage when wearing heavy armor (p. 167)",
+        "Remarkable Athlete: Add half proficiency to Strength, Dexterity & Consitution checks; jump farther (p.72)"
     ],
     "proficiencies": [ 
         "Dice games",
