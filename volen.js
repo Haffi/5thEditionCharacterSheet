@@ -3,12 +3,12 @@ var charJson =
     "name": "Volen", // born and raised on the outskirts of a cattle ranch to the NNW of Longsaddle (scag p.48)
     "classes": { // father is unknown, mother (Aret) is a lone Orc shaman living in a small cottage
         "Fighter": { // Aret has come to some understanding with the Kromlor family who own the ranch
-            "level": 7, // Volen suspects her father is not a local, is curious to find out more about the outside world
+            "level": 8, // Volen suspects her father is not a local, is curious to find out more about the outside world
             "hitdice": "d10"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 70, // 13 + 9 + 10 + 9 + 9 + 11 + 9
+    "hitpoints": 70, // 13 + 9 + 10 + 9 + 9 + 11 + 9 + 9
     "ac": 20, // 18 (plate) + 2 (shield)
     "speed": 30,
     "mainattributes": {
@@ -16,7 +16,7 @@ var charJson =
         "race": "Half-Orc",
         "alignment": "Lawful Neutral",
         "playername": "Haffi",
-        "xp": 23000 // page 15 in PHB
+        "xp": 34000 // page 15 in PHB
     },
     "appearance": {
         "age": 19, // left home at 14 years of age
@@ -27,7 +27,7 @@ var charJson =
         "hair": "black" // close cut, usually covered by a helmet
     },
     "abilityscores": {
-        "str": 18, // +2 Half-Orc, + 1 Heavy Armor Master
+        "str": 20, // +2 Half-Orc, +1 Heavy Armor Master, +2 8th lvl ASI
         "dex": 14, // +1 Resilient feat
         "con": 16, // +1 Half-Orc
         "int": 9,
@@ -47,14 +47,14 @@ var charJson =
         "perception"
     ],
     "attacks": {
-        "longsword": {
+        "Hag's Claw (longsword) +1": {
             "ability": "str",
-            "extraDmgMod": +2, // Duelist fighting style
+            "extraDmgMod": +3, // Duelist fighting style
             "die": "1d8/1d10",
             "proficient": true,
             "type": "slashing"
         },
-        "warhammer": {
+        "Mace (+0)": {
             "ability": "str",
             "extraDmgMod": +2, // Duelist fighting style
             "die": "1d8",
@@ -84,18 +84,18 @@ var charJson =
             "tinderbox",
             "10 torches",
             "10 days rations",
-            "50\' hemp rope",
-            "traveler\'s clothes", // Red Shields uniform
-            "seargent\'s insignia", // left the Red Shields in good standing
+            "50' hemp rope",
+            "traveler's clothes", // Red Shields uniform
+            "seargent's insignia", // left the Red Shields in good standing
             "bone dice",
             "plate armor",
-            "longsword",
+            "longsword +1", // found in a Sea Hag's lair
             "shield",
-            "warhammer",
+            "mace", // enchanted but gives no bonus
             "helmet",
             "cameo of a hideous person", // trinket 61, connected to father in some way
-            "2 x Storm boomerang - +3d4 thunder damage, DC 10 con save or be stunned",
-            "Potion of 'Bottled breath'"
+            "2 x Storm boomerang - +3d4 thunder damage, DC 10 con save or be stunned", // I have no idea how these regain their charges
+            "'Bottled breath' (potion)"
         ]
     },
     "personality": {
@@ -117,7 +117,8 @@ var charJson =
         "Resilient (Dex): Gain proficiency in Dexterity saving throws (p. 168)",
         "Extra attack: Attack twice with Attack action (p. 72)",
         "Heavy Armor Master: Ignore 3 mundane damage when wearing heavy armor (p. 167)",
-        "Remarkable Athlete: Add half proficiency to Strength, Dexterity & Consitution checks; jump farther (p.72)"
+        "Remarkable Athlete: Add half proficiency to Strength, Dexterity & Consitution checks; jump farther (p.72)",
+        "8th level ability score increase - Strength"
     ],
     "proficiencies": [ 
         "Dice games",
