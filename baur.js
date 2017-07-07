@@ -9,12 +9,12 @@ var charJson =
     "name": "Baur",
     "classes": {
         "Wizard": {
-            "level": 6,
+            "level": 8,
             "hitdice": "d6"
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 48, // 9 + 8 + 7 + 7 + 9 + 8
+    "hitpoints": 63, // 9 + 8 + 7 + 7 + 9 + 8 + 8 + 7
     "ac": "12",
     "speed": 30,
     "mainattributes": {
@@ -22,7 +22,7 @@ var charJson =
         "race": "Half-Orc",
         "alignment": "Neutral",
         "playername": "Haffi",
-        "xp": 0
+        "xp": 34000
     },
     "appearance": {
         "age": 25,
@@ -81,8 +81,8 @@ var charJson =
         "armor": [
             ],
         "other": [
-            "Explorer\'s pack",
-            "Traveler\'s clothes",
+            "Explorer's pack",
+            "Traveler's clothes",
             "Winter blanket",
             "Scroll case stuffed with notes on Medicine and Necromancy",
             "Herbalism kit",
@@ -94,8 +94,8 @@ var charJson =
     "personality": {
         "traits": "I am utterly serene, even in the face of disaster.",
         "ideals": "Meddling in the affairs of others only causes trouble.",
-        "bonds": "My life\'s work is writing a book on Vitalism.",
-        "flaws": "I\'d risk too much to uncover a lost bit of knowledge."
+        "bonds": "My life's work is writing a book on Vitalism.",
+        "flaws": "I'd risk too much to uncover a lost bit of knowledge."
     },
     "features": [ // good feats: Healer, Keen Mind, War Caster
         "Darkvision (60\')", // from race
@@ -107,7 +107,8 @@ var charJson =
         "Arcane Tradition: Necromancy",
         "Grim Harvest: Heal self when killing with spells (PH 118)",
         "Keen Mind: Always aware which way is north and what time it is, good memory. (PH 167)",
-        "Undead Thralls: Extra hit points and damage for undead thralls. (PH 119)"
+        "Undead Thralls: Extra hit points and damage for undead thralls. (PH 119)",
+        "Healer: Stabilizing a creature also heals one HP, action to heal for 1d6 + 4 + creature HD (PH 167)"
     ],
     "spellcasting": {
         "spellcastingAbility": "int",
@@ -115,17 +116,20 @@ var charJson =
             "spells0": 0,
             "spells1": 4,
             "spells2": 3,
-            "spells3": 3
+            "spells3": 3,
+            "spells4": 2
         },
         "spells": {
             "spells0": ["Chill Touch", "Light", "Ray of Frost", "Spare the Dying", "Thaumaturgy"],
             "spells1": ["Comprehend Languages", "Detect Magic", "False Life", "Find Familiar", "Identify", "Inflict Wounds", "Mage Armor", "Ray of Sickness", "Witch Bolt"],
             "spells2": ["Blindness/Deafness", "Gentle Repose", "Melf's Acid Arrow", "Ray of Enfeeblement"],
-            "spells3": ["Animate Dead", "Bestow Curse", "Leomund's Tiny Hut", "Stinking Cloud"]
+            "spells3": ["Animate Dead", "Bestow Curse", "Leomund's Tiny Hut", "Stinking Cloud"],
+            "spells4": ["Blight", "Leomund's Secret Chest"]
         }
     },
     "proficiencies": [
-        "Herbalism kit" // from background
+        "Herbalism kit", // from background
+        "Healer's kit" // from feat
     ],
     "languages": [
         "Common",
@@ -133,5 +137,6 @@ var charJson =
         "Elvish"
     ],
     "contacts": [
+        "Volen - Adventurer, younger sister"
         ]
 };
