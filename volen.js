@@ -8,7 +8,7 @@ var charJson =
         }
     },
     "inspirationpoints": 0,
-    "hitpoints": 70, // 13 + 9 + 10 + 9 + 9 + 11 + 9 + 9
+    "hitpoints": 79, // 13 + 9 + 10 + 9 + 9 + 11 + 9 + 9
     "ac": 20, // 18 (plate) + 2 (shield)
     "speed": 30,
     "mainattributes": {
