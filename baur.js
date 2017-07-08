@@ -123,7 +123,7 @@ var charJson =
             "spells0": ["Chill Touch", "Light", "Ray of Frost", "Spare the Dying", "Thaumaturgy"],
             "spells1": ["Comprehend Languages", "Detect Magic", "False Life", "Find Familiar", "Identify", "Inflict Wounds", "Mage Armor", "Ray of Sickness", "Witch Bolt"],
             "spells2": ["Blindness/Deafness", "Gentle Repose", "Melf's Acid Arrow", "Ray of Enfeeblement"],
-            "spells3": ["Animate Dead", "Bestow Curse", "Leomund's Tiny Hut", "Stinking Cloud"],
+            "spells3": ["Animate Dead", "Bestow Curse", "Fear", "Feign Death", "Leomund's Tiny Hut", "Stinking Cloud"],
             "spells4": ["Blight", "Leomund's Secret Chest"]
         }
     },
